@@ -256,6 +256,7 @@
   border-radius: 10px;
   flex: 2;
   order: 3;
+  overflow: hidden;
 }
 .discount .discount-desc .top {
   position: relative;
@@ -559,12 +560,25 @@
   }
 }
 @media (max-width: 400px) {
+  * {
+    font-size: 12px;
+  }
   .product-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 20px;
   }
+  .product-list {
+    grid-template-columns: repeat(1, auto) !important;
+  }
   .product-list li a {
     font-size: 0.8rem !important;
+  }
+  .header-content ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .email {
+    padding: 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */

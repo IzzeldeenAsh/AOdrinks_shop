@@ -302,6 +302,7 @@ header .header-content{
         border-radius: 10px;
         flex: 2;
         order: 3;
+        overflow: hidden;
         .top{
             position: relative;
             padding-left: 60px;
@@ -649,13 +650,16 @@ margin-top: 20px;
 }
 
 @media ( max-width: 400px ){
+    *{
+        font-size: 12px;
+    }
     .product-items{
         display: grid;
        grid-template-columns: repeat(1,1fr) !important;
        gap: 20px;}
       
        .product-list{
-       
+        grid-template-columns: repeat(1,auto) !important;
         li{
          
             a{
@@ -666,4 +670,14 @@ margin-top: 20px;
            
         }
     }
+    .header-content{
+        ul{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .email{
+        padding: 0 !important;
+    }
 }
+
