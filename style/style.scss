@@ -67,7 +67,8 @@ padding: 50px 0;
 header{
     padding: 20px 0;
     box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-    min-width: 300px;
+    min-width: 100%;
+   
 }
 header .header-content{
    display: flex;
@@ -104,6 +105,7 @@ header .header-content{
    img{
     max-width: 150px;
     opacity: 0.8;
+  
     &:hover{
         opacity: 1;
     }
@@ -437,12 +439,14 @@ header .header-content{
     .container{
         
         .product-list{
-            margin: 20px 0;
-            display: flex;
-            flex-direction: row;
+            margin: 20px;
+           display: grid;
+           grid-template-columns: repeat(4,auto);
+           text-align: center;
             justify-content: center;
+
             li{
-                padding: 20px;
+             margin: 0 10px;
                 a{
                     
                     font-size: 1.2rem;
@@ -576,11 +580,7 @@ header .header-content{
     }
     .my-account{
         flex: 1;
-        ul{
-            li{
-                
-            }
-        }
+      
     }
     .information{
 flex: 1;
@@ -654,4 +654,16 @@ margin-top: 20px;
        grid-template-columns: repeat(1,1fr) !important;
        gap: 20px;}
       
+       .product-list{
+       
+        li{
+         
+            a{
+                
+                font-size: 0.8rem !important;
+               
+            }
+           
+        }
+    }
 }
